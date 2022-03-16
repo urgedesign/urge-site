@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urge Design</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -13,6 +17,10 @@
         }
         html, body {
             height: 100%;
+            color: #333;
+            font-family: Inter, sans-serif;
+            font-size: 15px;
+            line-height: 1.4;
         }
         .main {
             display: flex;
@@ -20,14 +28,27 @@
             justify-content: center;
             height: 100%;
         }
-        .logo {
-            width: 120px;
+        .message {
+            max-width: 120px;
+            text-align: center;
+        }
+        .message a {
+            color: #111;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(0,0,0,0.5);
+            max-width: 120px;
+            transition: border 0.2s ease;
+        }
+        .message a:hover
+            border-bottom-color: rgba(0,0,0,1;
         }
     </style>
 </head>
 <body>
     <main class="main">
-        <img src="./img/logo.svg" class="logo"/>
+        <div>
+            <p class="message">Urge Design is now<br/><a href="https://www.formatdigital.co.nz" title="Format Digital, Christchurch web design and development">Format Digital</a>
+        </div>
     </main>
 </body>
 </html>
